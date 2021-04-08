@@ -1,4 +1,12 @@
-import { Flex, Box, UnorderedList, ListItem, Image, Link } from 'buit-ui';
+import {
+  Flex,
+  Box,
+  UnorderedList,
+  ListItem,
+  Image,
+  Link,
+  useTheme,
+} from 'buit-ui';
 import React from 'react';
 import { useRouter } from '../../utils/hooks/useRouter';
 
@@ -20,17 +28,20 @@ interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = ({}) => {
   const { pathname } = useRouter();
+  const {
+    colors: { purple, lightPurple },
+  } = useTheme();
 
   return (
     <>
       <Flex
-        bg='linear-gradient(0deg, rgba(69,63,125,1) 39%, rgba(106,101,165,1) 100%)'
+        bg={`linear-gradient(0deg, ${purple} 39%, ${lightPurple} 100%)`}
         p='20px'
       >
         <Image
           alt='WUPHF'
           src='https://static.wikia.nocookie.net/theoffice/images/0/09/Wuphf_logo-300x102.jpg'
-          minW='50%'
+          minW='70%'
         />
         <Box as='nav'>
           <UnorderedList
@@ -52,9 +63,6 @@ const Header: React.FC<HeaderProps> = ({}) => {
                     }
                     round='100%'
                     m='0 10px 0 0'
-                    _hover={{
-                      bgColor: '#47418e',
-                    }}
                   />
                   {link.name}
                 </Link>

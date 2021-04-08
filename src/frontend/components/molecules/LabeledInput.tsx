@@ -1,4 +1,4 @@
-import { Box, Input, InputProps, Text } from 'buit-ui';
+import { Box, Flex, Input, InputProps, Text } from 'buit-ui';
 import React from 'react';
 
 interface LabeledInputProps extends InputProps {
@@ -12,11 +12,18 @@ const LabeledInput: React.FC<LabeledInputProps> = ({
   ...props
 }) => {
   return (
-    <Box variant='tertiary'>
+    <Flex
+      variant='tertiary'
+      color='purple'
+      w='100%'
+      justifyContent='flex-end'
+      alignItems='center'
+      margin='10px 0'
+    >
       <label>{label}</label>
       <Input {...props} round='5px' m='0 0 0 10px' />
       <Text color='red'>{error}</Text>
-    </Box>
+    </Flex>
   );
 };
 

@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Image, Text, useTheme, Link } from 'buit-ui';
+import { relative } from 'path';
 import React from 'react';
 
 interface AttentionInvestorsProps {}
@@ -12,8 +13,22 @@ const AttentionInvestors: React.FC<AttentionInvestorsProps> = ({}) => {
       bg='linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(177,177,177,1) 100%)'
       w='50%'
       p='40px 50px 30px 30px'
-      m='40px 0'
+      m='40px -20px 40px 0'
       h='fit-content'
+      position='relative'
+      _after={{
+        position: 'absolute',
+        top: '-25px',
+        right: '0',
+        zIndex: -1,
+        customCss: `
+          content: '';
+          border-right: 9px solid transparent;
+          border-left: 35px solid rgba(93,93,93,1);
+          border-bottom: 5px solid rgba(93,93,93,1);
+          border-top: 20px solid transparent;
+        `,
+      }}
     >
       <Flex justifyContent='space-between' alignItems='center'>
         <Box
@@ -28,17 +43,17 @@ const AttentionInvestors: React.FC<AttentionInvestorsProps> = ({}) => {
             right: '-20px',
             bottom: '-10px',
             customCss: `
-        content: '';
-        border-left: 22px solid ${purple};
-        border-top: 22px solid transparent;
-        border-bottom: 22px solid transparent;
-      `,
+              content: '';
+              border-left: 22px solid ${purple};
+              border-top: 22px solid transparent;
+              border-bottom: 22px solid transparent;
+            `,
           }}
         />
         <Heading
           color='purple'
+          fontSize='30px'
           customCss={`text-transform: uppercase;
-        margin-right: 80px;
          `}
         >
           Attention Investors!
@@ -46,13 +61,7 @@ const AttentionInvestors: React.FC<AttentionInvestorsProps> = ({}) => {
       </Flex>
       <Flex margin='40px 0 0 0'>
         <Image src='/profit.webp' border={`3px solid ${orange}`} />
-        <Text
-          p='20px'
-          customCss={`
-        font-size: 20px;
-        line-height: 30px;
-      `}
-        >
+        <Text p='20px'>
           As the founder, and as a friend, I would like to urge you to consider
           investing in our dynamic company. WUPHF.com. Have you seen the film{' '}
           <i>The Social Network</i>? Well this site is every bit as good as that

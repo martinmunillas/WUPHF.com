@@ -7,6 +7,11 @@ import Middlewares from './components/middlewares/Middlewares';
 import { BuitProvider, extendTheme, theme } from 'buit-ui';
 
 const WUPHF = extendTheme(theme, {
+  global: {
+    body: {
+      overflowX: 'hidden',
+    },
+  },
   colors: {
     purple: 'rgba(69,63,125,1)',
     lightPurple: 'rgba(106,101,165,1)',

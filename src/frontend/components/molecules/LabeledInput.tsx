@@ -1,5 +1,5 @@
-import { Box, Flex, Input, InputProps, Text } from 'buit-ui';
-import React from 'react';
+import { Flex, Input, InputProps, Text } from "quaantum-components";
+import React from "react";
 
 interface LabeledInputProps extends InputProps {
   label: string;

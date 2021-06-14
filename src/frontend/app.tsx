@@ -1,27 +1,27 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-import routes from '../shared/routes';
-import GlobalStyle from './style/global';
-import Middlewares from './components/middlewares/Middlewares';
-import { BuitProvider, extendTheme, theme } from 'buit-ui';
+import routes from "../shared/routes";
+import GlobalStyle from "./style/global";
+import Middlewares from "./components/middlewares/Middlewares";
+import { QuaantumProvider, extendTheme, theme } from "quaantum-components";
 
 const WUPHF = extendTheme(theme, {
   global: {
     body: {
-      overflowX: 'hidden',
+      overflowX: "hidden",
     },
   },
   colors: {
-    purple: 'rgba(69,63,125,1)',
-    lightPurple: 'rgba(106,101,165,1)',
-    orange: '#f95f10',
+    purple: "rgba(69,63,125,1)",
+    lightPurple: "rgba(106,101,165,1)",
+    orange: "#f95f10",
   },
 });
 
 const App = () => {
   return (
-    <BuitProvider theme={WUPHF}>
+    <QuaantumProvider theme={WUPHF}>
       <GlobalStyle />
       <Middlewares />
       <Switch>
@@ -29,7 +29,7 @@ const App = () => {
           <Route {...route} key={i} />
         ))}
       </Switch>
-    </BuitProvider>
+    </QuaantumProvider>
   );
 };
 

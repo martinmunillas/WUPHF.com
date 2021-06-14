@@ -1,5 +1,5 @@
-import { Box, Flex, Heading } from 'buit-ui';
-import React from 'react';
+import { Box, Flex, Heading } from "quaantum-components";
+import React from "react";
 
 interface WUPHFProps {}
 
@@ -14,11 +14,9 @@ const WUPHF: React.FC<WUPHFProps> = ({ children }) => {
         color='#121212'
         position='relative'
         right='-40px'
-        customCss={`
-        text-orientation: upright;
-        transform: rotate(-90deg) scale(3.5) scaleY(2.0);
-        transform-origin: 100% 100%;
-      `}
+        textOrientation='upright'
+        transform='rotate(-90deg) scale(3.5) scaleY(2.0)'
+        transformOrigin='100% 100%'
       >
         WUPHF.COM
       </Heading>
@@ -28,11 +26,9 @@ const WUPHF: React.FC<WUPHFProps> = ({ children }) => {
         color='#121212'
         position='relative'
         left='-40px'
-        customCss={`
-        text-orientation: upright;
-        transform: rotate(90deg) scale(3.5) scaleY(2.0);
-        transform-origin: 0 100%;
-      `}
+        textOrientation='upright'
+        transform='rotate(90deg) scale(3.5) scaleY(2.0)'
+        transformOrigin='0 100%'
       >
         WUPHF.COM
       </Heading>

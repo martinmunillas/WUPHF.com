@@ -1,6 +1,13 @@
-import { Box, Flex, Heading, Image, Text, useTheme, Link } from 'buit-ui';
-import { relative } from 'path';
-import React from 'react';
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useTheme,
+  Link,
+} from "quaantum-components";
+import React from "react";
 
 interface AttentionInvestorsProps {}
 
@@ -17,17 +24,15 @@ const AttentionInvestors: React.FC<AttentionInvestorsProps> = ({}) => {
       h='fit-content'
       position='relative'
       _after={{
-        position: 'absolute',
-        top: '-25px',
-        right: '0',
+        position: "absolute",
+        top: "-25px",
+        right: "0",
         zIndex: -1,
-        customCss: `
-          content: '';
-          border-right: 9px solid transparent;
-          border-left: 35px solid rgba(93,93,93,1);
-          border-bottom: 5px solid rgba(93,93,93,1);
-          border-top: 20px solid transparent;
-        `,
+        content: "''",
+        br: "9px solid transparent",
+        bl: "35px solid rgba(93,93,93,1)",
+        bb: "5px solid rgba(93,93,93,1)",
+        bt: "20px solid transparent",
       }}
     >
       <Flex justifyContent='space-between' alignItems='center'>
@@ -37,33 +42,26 @@ const AttentionInvestors: React.FC<AttentionInvestorsProps> = ({}) => {
           h='22px'
           position='relative'
           _after={{
-            width: '0px',
-            height: '0px',
-            position: 'absolute',
-            right: '-20px',
-            bottom: '-10px',
-            customCss: `
-              content: '';
-              border-left: 22px solid ${purple};
-              border-top: 22px solid transparent;
-              border-bottom: 22px solid transparent;
-            `,
+            width: "0px",
+            height: "0px",
+            position: "absolute",
+            right: "-20px",
+            bottom: "-10px",
+            content: "''",
+            borderLeft: `22px solid ${purple}`,
+            borderTop: "22px solid transparent",
+            borderBottom: "22px solid transparent",
           }}
         />
-        <Heading
-          color='purple'
-          fontSize='30px'
-          customCss={`text-transform: uppercase;
-         `}
-        >
+        <Heading color='purple' fontSize='30px' textTransform='uppercase'>
           Attention Investors!
         </Heading>
       </Flex>
       <Flex margin='40px 0 0 0'>
-        <Image src='/profit.webp' border={`3px solid ${orange}`} />
+        <Image src='/profit.webp' alt='profits' b={`3px solid ${orange}`} />
         <Text p='20px'>
           As the founder, and as a friend, I would like to urge you to consider
-          investing in our dynamic company. WUPHF.com. Have you seen the film{' '}
+          investing in our dynamic company. WUPHF.com. Have you seen the film{" "}
           <i>The Social Network</i>? Well this site is every bit as good as that
           movie.
           <Link
@@ -74,7 +72,7 @@ const AttentionInvestors: React.FC<AttentionInvestorsProps> = ({}) => {
             textDecoration='underline'
             margin='20px 0 0 0'
           >
-            Find out more {'>'}
+            Find out more {">"}
           </Link>
         </Text>
       </Flex>

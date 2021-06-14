@@ -1,6 +1,6 @@
-import { Box, Heading, Flex, Text, useTheme } from 'buit-ui';
-import React from 'react';
-import LabeledInput from '../molecules/LabeledInput';
+import { Box, Heading, Flex, Text, useTheme } from "quaantum-components";
+import React from "react";
+import LabeledInput from "../molecules/LabeledInput";
 
 interface Input {
   name: string;
@@ -8,13 +8,13 @@ interface Input {
 }
 
 const inputs: Input[] = [
-  { name: 'Email Address:' },
-  { name: 'Mobile Number:' },
-  { name: 'Home Number:' },
-  { name: 'Fax:' },
-  { name: 'WiFi Printer:' },
-  { name: 'Twitter:', placeholder: '@username' },
-  { name: 'Facebook:', placeholder: 'http://www.facebook.com/username' },
+  { name: "Email Address:" },
+  { name: "Mobile Number:" },
+  { name: "Home Number:" },
+  { name: "Fax:" },
+  { name: "WiFi Printer:" },
+  { name: "Twitter:", placeholder: "@username" },
+  { name: "Facebook:", placeholder: "http://www.facebook.com/username" },
 ];
 
 interface SignUpProps {}
@@ -26,7 +26,7 @@ const SignUp: React.FC<SignUpProps> = ({}) => {
   return (
     <Box m='40px 0' w='45%'>
       <Heading
-        customCss='text-transform: uppercase;'
+        textTransform='uppercase'
         bg='linear-gradient(180deg, rgba(249,135,63,1) 0%, rgba(222,86,25,1) 100%)'
         color='white'
         m='0 0 0 -20px'
@@ -34,20 +34,18 @@ const SignUp: React.FC<SignUpProps> = ({}) => {
         fontSize='30px'
         position='relative'
         _before={{
-          position: 'absolute',
-          top: '-25px',
-          left: '0',
+          position: "absolute",
+          top: "-25px",
+          left: "0",
           zIndex: -1,
-          customCss: `
-            content: '';
-            border-right: 35px solid #f95f10;
-            border-left: 7px solid transparent;
-            border-bottom: 5px solid #f95f10;
-            border-top: 20px solid transparent;
-          `,
+          content: "''",
+          br: "35px solid #f95f10",
+          bl: "7px solid transparent",
+          bb: "5px solid #f95f10",
+          bt: "20px solid transparent",
         }}
       >
-        Sign Up Now to Get <span style={{ color: 'black' }}>WUPHF'D</span>
+        Sign Up Now to Get <span style={{ color: "black" }}>WUPHF'D</span>
       </Heading>
       <Flex
         alignItems='center'
@@ -72,7 +70,7 @@ const SignUp: React.FC<SignUpProps> = ({}) => {
               color='white'
               w='300px'
               _placeholder={{
-                color: 'white',
+                color: "white",
               }}
             ></LabeledInput>
           ))}
@@ -91,25 +89,21 @@ const SignUp: React.FC<SignUpProps> = ({}) => {
           top='-70px'
           left='280px'
           zIndex={2}
-          customCss={`
-    text-align: center;
-    padding-top: 10px;
-    `}
+          textAlign='center'
+          pt='10px'
           _before={{
-            width: '0px',
-            height: '0px',
-            position: 'absolute',
-            left: '32px',
-            bottom: '-20px',
+            width: "0px",
+            height: "0px",
+            position: "absolute",
+            left: "32px",
+            bottom: "-20px",
             zIndex: -1,
-            customCss: `
-      content: '';
-      border-left: 24px solid ${orange};
-      border-right: 12px solid transparent;
-      border-top: 12px solid ${orange};
-      border-bottom: 20px solid transparent;
-      transform: rotate(20deg);
-      `,
+            content: "''",
+            bl: `24px solid ${orange}`,
+            br: "12px solid transparent",
+            bt: `12px solid ${orange}`,
+            bb: "20px solid transparent",
+            transform: "rotate(20deg)",
           }}
         >
           WUPHF Me!

@@ -1,5 +1,5 @@
-import { Box, Text, TextArea, TextAreaProps } from 'buit-ui';
-import React from 'react';
+import { Box, Text, TextArea, TextAreaProps } from "quaantum-components";
+import React from "react";
 
 interface LabeledTextAreaProps extends TextAreaProps {
   label: string;

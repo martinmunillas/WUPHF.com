@@ -1,5 +1,5 @@
-import { Flex, Heading, Text } from 'buit-ui';
-import React from 'react';
+import { Flex, Heading, Text } from "quaantum-components";
+import React from "react";
 
 interface NotFoundProps {}
 

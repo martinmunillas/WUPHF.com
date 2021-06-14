@@ -1,10 +1,8 @@
-import { RouteProps } from 'react-router-dom';
+import { RouteProps } from "react-router-dom";
 
-import Home from '../frontend/pages/Home';
-import SignUp from '../frontend/pages/auth/SignUp';
-import SignIn from '../frontend/pages/auth/SignIn';
-import { generateRoutes } from './utils/funcs/generateRoutes';
-import NotFound from '../frontend/pages/NotFound';
+import Home from "../frontend/pages/Home";
+import { generateRoutes } from "./utils/funcs/generateRoutes";
+import NotFound from "../frontend/pages/NotFound";
 
 export interface MyRouteProps extends RouteProps {
   free?: boolean;
@@ -15,13 +13,13 @@ export interface MyRouteProps extends RouteProps {
 const routes: MyRouteProps[] = [
   {
     exact: true,
-    path: '/',
+    path: "/",
     component: Home,
-    key: 'Home',
+    key: "Home",
   },
   {
     component: NotFound,
-    key: 'NotFound',
+    key: "NotFound",
   },
 ];
 

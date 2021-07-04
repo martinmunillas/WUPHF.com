@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server",
-    "copy": "cpy '**/*.jpeg' '**/*.webp' ../build/ --cwd=src/ --no-overwrite --parents",
+    "copy": "cpy '**/*.jpeg' '**/*.webp' '**/*.jpg' ../build/ --cwd=src/ --no-overwrite --parents",
     "build": "tsc && yarn copy && webpack-cli --config webpack.config.js",
     "dev": "tsc && yarn copy && concurrently 'tsc -w' 'webpack-cli --config webpack.config.js --mode development --watch' 'nodemon -L build/server --config nodemon.json'"
   },

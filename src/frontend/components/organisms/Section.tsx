@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from "quaantum-components";
+import { Box, Flex, Heading, Text } from "quaantum-components";
 import React, { ReactNode } from "react";
 import Item, { ItemProps } from "./Item";
 
@@ -10,8 +10,13 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ items, name, description }) => {
   return (
-    <Box>
-      <Heading textTransform='uppercase' color='purple'>
+    <Box my='20px'>
+      <Heading
+        textTransform='uppercase'
+        color='purple'
+        d='flex'
+        alignItems='center'
+      >
         <Box
           width='50px'
           height='30px'
@@ -23,10 +28,12 @@ const Section: React.FC<SectionProps> = ({ items, name, description }) => {
         />{" "}
         {name}
       </Heading>
-      <Text>{description}</Text>
-      {items.map((item) => (
-        <Item {...item} />
-      ))}
+      <Text my='20px'>{description}</Text>
+      <Flex direction='column' rowGap='10px'>
+        {items.map((item, i) => (
+          <Item {...item} key={i} />
+        ))}
+      </Flex>
     </Box>
   );
 };

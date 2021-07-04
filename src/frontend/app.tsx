@@ -11,6 +11,9 @@ const WUPHF = extendTheme(theme, {
     body: {
       overflowX: "hidden",
     },
+    "*": {
+      boxSizing: "border-box",
+    },
   },
   colors: {
     purple: "rgba(69,63,125,1)",

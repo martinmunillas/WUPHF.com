@@ -8,8 +8,8 @@ export interface ItemProps {
 
 const Item: React.FC<ItemProps> = ({ name, image }) => {
   return (
-    <Flex>
-      <Image src={image} alt={name || ""} />
+    <Flex gap='20px'>
+      <Image src={image} width='40%' alt={name || ""} />
       {name && (
         <Box>
           <Heading as='h2'>{name}</Heading>

@@ -38,12 +38,9 @@ const Header: React.FC<HeaderProps> = ({}) => {
         bg={`linear-gradient(0deg, ${purple} 39%, ${lightPurple} 100%)`}
         p='20px'
         margin='20px 0 0 0'
+        w='100%'
       >
-        <Image
-          alt='WUPHF'
-          src='https://static.wikia.nocookie.net/theoffice/images/0/09/Wuphf_logo-300x102.jpg'
-          minW='70%'
-        />
+        <Image alt='WUPHF' src='/logo.jpg' minW='70%' />
         <Box as='nav'>
           <UnorderedList
             h='100%'

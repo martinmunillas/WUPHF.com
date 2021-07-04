@@ -1,4 +1,4 @@
-import { Box, Flex, Link } from "quaantum-components";
+import { Box, Flex, Grid, Link } from "quaantum-components";
 import React from "react";
 import Header from "../components/molecules/Header";
 import WUPHF from "../components/molecules/WUPHF";
@@ -16,7 +16,12 @@ const Home: React.FC<{}> = ({}) => {
           <AttentionInvestors />
         </Flex>
       </WUPHF>
-      <Flex bgColor='lightgray' p='50px 11%'>
+      <Grid
+        templateColumns='1fr 1fr'
+        gap='20px'
+        bgColor='lightgray'
+        p='50px 11%'
+      >
         <Section
           name='Downloads'
           description={
@@ -26,8 +31,8 @@ const Home: React.FC<{}> = ({}) => {
             </>
           }
           items={[
-            { name: "WUPHF Bumper Sticker", image: "/sticker.jpeg" },
-            { name: "WUPHF Fax Cover Sheet", image: "/fax.png" },
+            { name: "WUPHF Bumper Sticker", image: "/sticker.jpg" },
+            { name: "WUPHF Fax Cover Sheet", image: "/fax.jpeg" },
           ]}
         />
         <Box>
@@ -58,7 +63,7 @@ const Home: React.FC<{}> = ({}) => {
             items={[{ image: "/beta.jpeg" }]}
           />
         </Box>
-      </Flex>
+      </Grid>
     </>
   );
 };

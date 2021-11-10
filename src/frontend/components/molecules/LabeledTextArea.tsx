@@ -1,4 +1,4 @@
-import { Box, Text, TextArea, TextAreaProps } from "quaantum-components";
+import { Box, Text, TextArea, TextAreaProps } from "@quaantum/components";
 import React from "react";
 
 interface LabeledTextAreaProps extends TextAreaProps {
@@ -22,7 +22,7 @@ const LabeledTextArea: React.FC<LabeledTextAreaProps> = ({
     <Box>
       <label>{label}</label>
       <TextArea {...props} />
-      <Text color='red'>{error}</Text>
+      <Text color="red">{error}</Text>
     </Box>
   );
 };

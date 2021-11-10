@@ -1002,6 +1002,14 @@
     mkdirp "^1.0.4"
     rimraf "^2.7.1"
 
+"@quaantum/components@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@quaantum/components/-/components-0.2.2.tgz#3ed20d980f0b41d1841ca172874de3a6b6e9621a"
+  integrity sha512-ftHgZbFxSn2/gCY22SG8XP8VrpJpGrzhOUXOFzBaVpuCs0SJ8mZDDSFkS/4DLz9pyNcFVErWkBE8LKfAbsXH2A==
+  dependencies:
+    focus-trap-react "^8.5.0"
+    styled-components "^5.2.1"
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -3107,18 +3115,18 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 focus-trap-react@^8.5.0:
-  version "8.7.0"
-  resolved "https://registry.yarnpkg.com/focus-trap-react/-/focus-trap-react-8.7.0.tgz#5cf7fceb14561ccbb54208958e63422e1116266d"
-  integrity sha512-zqQKgyYFvd9F1We6WeUZkLo/qGWrZKMGMtOXBz+18gyjg5XIzjz+cX8qdtpUZ2eJdyp/1AdHhcklCN8edyF0Ew==
+  version "8.8.2"
+  resolved "https://registry.yarnpkg.com/focus-trap-react/-/focus-trap-react-8.8.2.tgz#ac374819cddd8937b8687eaf7f351b3c10ed3c34"
+  integrity sha512-YgacIMxeAOytHOEbzBWL7+itBkn4ARMwQhtt6hYVHqHzPUPhmfEyKJ/nqsyMerzOK1DzlDv8Q8phRAY8vpa0rA==
   dependencies:
-    focus-trap "^6.6.0"
+    focus-trap "^6.7.1"
 
-focus-trap@^6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-6.6.0.tgz#7fb37679926ec1bd762d0748b056c68a64a9e8cf"
-  integrity sha512-2hWVR3XbBejn5v8wDW9DFzLWXcxMNaSJ/CtE3E+FJjjBCLwIYbZJwjUi2RDBfQPM58gHEt5hck0jrJgHR9/s+A==
+focus-trap@^6.7.1:
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-6.7.1.tgz#d474f86dbaf3c7fbf0d53cf0b12295f4f4068d10"
+  integrity sha512-a6czHbT9twVpy2RpkWQA9vIgwQgB9Nx1PIxNNUxQT4nugG/3QibwxO+tWTh9i+zSY2SFiX4pnYhTaFaQF/6ZAg==
   dependencies:
-    tabbable "^5.2.0"
+    tabbable "^5.2.1"
 
 follow-redirects@^1.10.0:
   version "1.13.1"
@@ -5202,14 +5210,6 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
-quaantum-components@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/quaantum-components/-/quaantum-components-0.0.10.tgz#05f2875ac7c88634fa240d955d9dbce9810789a4"
-  integrity sha512-6kkA0VoqTfsTlUcR2+e/NMjW6hCJDFwBRHVb2shGCA1oR/mOkdeTl5HyVBtCYnvjLjhJKJv8gcTx2UdYpadpDQ==
-  dependencies:
-    focus-trap-react "^8.5.0"
-    styled-components "^5.2.1"
-
 query-string@^6.13.8:
   version "6.13.8"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.13.8.tgz#8cf231759c85484da3cf05a851810d8e825c1159"
@@ -6139,10 +6139,10 @@ supports-color@^8.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tabbable@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.2.0.tgz#4fba60991d8bb89d06e5d9455c92b453acf88fb2"
-  integrity sha512-0uyt8wbP0P3T4rrsfYg/5Rg3cIJ8Shl1RJ54QMqYxm1TLdWqJD1u6+RQjr2Lor3wmfT7JRHkirIwy99ydBsyPg==
+tabbable@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.2.1.tgz#e3fda7367ddbb172dcda9f871c0fdb36d1c4cd9c"
+  integrity sha512-40pEZ2mhjaZzK0BnI+QGNjJO8UYx9pP5v7BGe17SORTO0OEuuaAwQTkAp8whcZvqon44wKFOikD+Al11K3JICQ==
 
 tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"

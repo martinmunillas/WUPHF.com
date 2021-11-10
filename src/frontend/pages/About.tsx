@@ -1,4 +1,4 @@
-import { Box, Heading, Flex, Text, Image } from "quaantum-components";
+import { Box, Heading, Flex, Text, Img } from "@quaantum/components";
 import React from "react";
 import Header from "../components/molecules/Header";
 import WUPHF from "../components/molecules/WUPHF";
@@ -7,17 +7,17 @@ const About: React.FC<{}> = ({}) => {
   return (
     <WUPHF>
       <Header />
-      <Box bgColor='white' d='flex'>
-        <Box m='40px 0' bgColor='white'>
+      <Box bgColor="white" d="flex">
+        <Box m="40px 0" bgColor="white">
           <Heading
-            textTransform='uppercase'
-            bg='linear-gradient(180deg, rgba(249,135,63,1) 0%, rgba(222,86,25,1) 100%)'
-            color='white'
-            m='0 0 0 -20px'
-            p='10px 20px 10px 40px'
-            fontSize='30px'
-            position='relative'
-            w='45%'
+            textTransform="uppercase"
+            bg="linear-gradient(180deg, rgba(249,135,63,1) 0%, rgba(222,86,25,1) 100%)"
+            color="white"
+            m="0 0 0 -20px"
+            p="10px 20px 10px 40px"
+            fontSize="30px"
+            position="relative"
+            w="45%"
             _before={{
               position: "absolute",
               top: "-25px",
@@ -33,10 +33,10 @@ const About: React.FC<{}> = ({}) => {
             About the CEO
           </Heading>
           <Flex
-            justifyContent='center'
-            as='form'
-            p='20px 30px'
-            columnGap='40px'
+            justifyContent="center"
+            as="form"
+            p="20px 30px"
+            columnGap="40px"
           >
             <Box>
               <Text>
@@ -59,7 +59,7 @@ const About: React.FC<{}> = ({}) => {
                 Gazete (no longer published).
               </Text>
             </Box>
-            <Image src='/ceo.jpg' alt='Ryan Howard' />
+            <Img src="/ceo.jpg" alt="Ryan Howard" />
           </Flex>
         </Box>
       </Box>

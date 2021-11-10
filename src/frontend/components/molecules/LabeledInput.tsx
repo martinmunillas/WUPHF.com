@@ -1,4 +1,4 @@
-import { Flex, Input, InputProps, Text } from "quaantum-components";
+import { Flex, Input, InputProps, Text } from "@quaantum/components";
 import React from "react";
 
 interface LabeledInputProps extends InputProps {
@@ -13,16 +13,16 @@ const LabeledInput: React.FC<LabeledInputProps> = ({
 }) => {
   return (
     <Flex
-      variant='tertiary'
-      color='purple'
-      w='100%'
-      justifyContent='flex-end'
-      alignItems='center'
-      margin='10px 0'
+      variant="tertiary"
+      color="purple"
+      w="100%"
+      justifyContent="flex-end"
+      alignItems="center"
+      margin="10px 0"
     >
       <label>{label}</label>
-      <Input {...props} round='5px' m='0 0 0 10px' />
-      <Text color='red'>{error}</Text>
+      <Input {...props} round="5px" m="0 0 0 10px" />
+      <Text color="red">{error}</Text>
     </Flex>
   );
 };

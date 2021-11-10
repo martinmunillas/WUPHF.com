@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Link } from "quaantum-components";
+import { Box, Flex, Grid, Link } from "@quaantum/components";
 import React from "react";
 import Header from "../components/molecules/Header";
 import WUPHF from "../components/molecules/WUPHF";
@@ -11,19 +11,19 @@ const Home: React.FC<{}> = ({}) => {
     <>
       <WUPHF>
         <Header />
-        <Flex justifyContent='space-between' bgColor='white'>
+        <Flex justifyContent="space-between" bgColor="white">
           <SignUp />
           <AttentionInvestors />
         </Flex>
       </WUPHF>
       <Grid
-        templateColumns='1fr 1fr'
-        gap='20px'
-        bgColor='lightgray'
-        p='50px 11%'
+        templateColumns="1fr 1fr"
+        gap="20px"
+        bgColor="lightgray"
+        p="50px 11%"
       >
         <Section
-          name='Downloads'
+          name="Downloads"
           description={
             <>
               Want to edge up your ride or faxes? Download your WUPHF bumper
@@ -37,7 +37,7 @@ const Home: React.FC<{}> = ({}) => {
         />
         <Box>
           <Section
-            name='Shop'
+            name="Shop"
             description={
               <>
                 Ladies, sport the latest in hip tech wear by buying our NEW tee.
@@ -53,11 +53,11 @@ const Home: React.FC<{}> = ({}) => {
             ]}
           />
           <Section
-            name='WUPHF Beta Site'
+            name="WUPHF Beta Site"
             description={
               <>
                 We've come a long way since our beta site back in September!
-                relive <b>WUPHF</b> beta here. <Link href='/beta'>Go{">"}</Link>
+                relive <b>WUPHF</b> beta here. <Link href="/beta">Go{">"}</Link>
               </>
             }
             items={[{ image: "/beta.jpeg" }]}

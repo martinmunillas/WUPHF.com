@@ -8,6 +8,7 @@ import {
   Link,
 } from "@quaantum/components";
 import React from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 interface AttentionInvestorsProps {}
 
@@ -65,6 +66,8 @@ const AttentionInvestors: React.FC<AttentionInvestorsProps> = ({}) => {
           <i>The Social Network</i>? Well this site is every bit as good as that
           movie.
           <Link
+            // @ts-ignore
+            as={RouterLink}
             href="/investors"
             color="orange"
             display="block"

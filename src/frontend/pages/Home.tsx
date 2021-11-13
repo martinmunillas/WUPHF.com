@@ -5,6 +5,7 @@ import WUPHF from "../components/molecules/WUPHF";
 import AttentionInvestors from "../components/organisms/AttentionInvestors";
 import Section from "../components/organisms/Section";
 import SignUp from "../components/organisms/SignUp";
+import { Link as RouterLink } from "react-router-dom";
 
 const Home: React.FC<{}> = ({}) => {
   return (
@@ -57,7 +58,10 @@ const Home: React.FC<{}> = ({}) => {
             description={
               <>
                 We've come a long way since our beta site back in September!
-                relive <b>WUPHF</b> beta here. <Link href="/beta">Go{">"}</Link>
+                relive <b>WUPHF</b> beta here. {/* @ts-ignore */}
+                <Link as={RouterLink} href="/beta">
+                  Go{">"}
+                </Link>
               </>
             }
             items={[{ image: "/beta.jpeg" }]}

@@ -9,7 +9,7 @@ import {
 } from "@quaantum/components";
 import React from "react";
 import { useRouter } from "../../utils/hooks/useRouter";
-
+import { Link as RouterLink } from "react-router-dom";
 interface Link {
   name: string;
   href: string;
@@ -18,10 +18,10 @@ interface Link {
 const links: Link[] = [
   { name: "main", href: "/" },
   { name: "about", href: "/about" },
-  { name: "for investors", href: "/investors" },
-  { name: "downloads", href: "/downloads" },
-  { name: "testimonials", href: "/testimonials" },
-  { name: "shop", href: "/shop" },
+  { name: "for investors", href: "" },
+  { name: "downloads", href: "" },
+  { name: "testimonials", href: "" },
+  { name: "shop", href: "" },
 ];
 
 interface HeaderProps {}
@@ -50,7 +50,13 @@ const Header: React.FC<HeaderProps> = ({}) => {
           >
             {links.map((link) => (
               <ListItem listStyle="none" m="10px 20px" key={link.href}>
-                <Link href={link.href} color="white" display="flex">
+                <Link
+                  // @ts-ignore
+                  as={RouterLink}
+                  href={link.href}
+                  color="white"
+                  display="flex"
+                >
                   <Box
                     width="30px"
                     height="20px"

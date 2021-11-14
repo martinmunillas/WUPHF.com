@@ -6,10 +6,10 @@ interface NotFoundProps {}
 
 const NotFound: React.FC<NotFoundProps> = ({}) => {
   return (
-    <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <Img src="/WUPHFerror.jpg" alt="not found" />
+    <Flex justifyContent='center' alignItems='center' flexDirection='column'>
+      <Img src='/WUPHFerror.jpg' alt='not found' />
       {/* @ts-ignore*/}
-      <Link as={RouterLink} href="/">
+      <Link as={RouterLink} to='/'>
         {"<-"} Home
       </Link>
     </Flex>

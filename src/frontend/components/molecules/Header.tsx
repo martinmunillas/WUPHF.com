@@ -36,37 +36,37 @@ const Header: React.FC<HeaderProps> = ({}) => {
     <>
       <Flex
         bg={`linear-gradient(0deg, ${purple} 39%, ${lightPurple} 100%)`}
-        p="20px"
-        margin="20px 0 0 0"
-        w="100%"
+        p='20px'
+        margin='20px 0 0 0'
+        w='100%'
       >
-        <Img alt="WUPHF" src="/logo.jpg" minW="70%" />
-        <Box as="nav">
+        <Img alt='WUPHF' src='/logo.jpg' minW='70%' />
+        <Box as='nav'>
           <UnorderedList
-            h="100%"
-            display="flex"
-            justifyContent="center"
-            flexDirection="column"
+            h='100%'
+            display='flex'
+            justifyContent='center'
+            flexDirection='column'
           >
             {links.map((link) => (
-              <ListItem listStyle="none" m="10px 20px" key={link.href}>
+              <ListItem listStyle='none' m='10px 20px' key={link.href}>
                 <Link
                   // @ts-ignore
                   as={RouterLink}
-                  href={link.href}
-                  color="white"
-                  display="flex"
+                  to={link.href}
+                  color='white'
+                  display='flex'
                 >
                   <Box
-                    width="30px"
-                    height="20px"
+                    width='30px'
+                    height='20px'
                     bg={
                       pathname === link.href
                         ? "linear-gradient(180deg, rgba(247,158,101,1) 0%, rgba(249,136,72,1) 100%)"
                         : "#57518e"
                     }
-                    round="100%"
-                    m="0 10px 0 0"
+                    round='100%'
+                    m='0 10px 0 0'
                   />
                   {link.name}
                 </Link>
@@ -76,14 +76,14 @@ const Header: React.FC<HeaderProps> = ({}) => {
         </Box>
       </Flex>
       <Box
-        w="calc(100% + 40px)"
-        margin="0 0 0 -20px"
-        h="30px"
-        bgColor="lightgray"
-        bt="5px solid white"
-        bb="3px solid gray"
-        boxShadow="0px 0px 26px 0px rgba(0,0,0,0.75);"
-        position="relative"
+        w='calc(100% + 40px)'
+        margin='0 0 0 -20px'
+        h='30px'
+        bgColor='lightgray'
+        bt='5px solid white'
+        bb='3px solid gray'
+        boxShadow='0px 0px 26px 0px rgba(0,0,0,0.75);'
+        position='relative'
         _before={{
           position: "absolute",
           top: "-30px",
